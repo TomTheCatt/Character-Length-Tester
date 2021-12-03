@@ -32,13 +32,14 @@ while True:
             line.remove(letter)
             line = "".join(line)
             print_line()
+            time.sleep(.01)
         elif keyboard.is_pressed("right"):
             line = list(line)
             line.append(letter)
             line = "".join(line)
             print_line()
+            time.sleep(.01)
         elif keyboard.is_pressed("e"):
             break
     except:
         pass
-    time.sleep(.01)
